@@ -12,20 +12,17 @@ import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule, USE_DEVICE_LANGUAGE, USE_EMULATOR as USE_AUTH_EMULATOR } from '@angular/fire/compat/auth';
 import { AngularFireAuthGuardModule } from '@angular/fire/compat/auth-guard';
-import { GasolinerasListComponent } from './components/objetoPerdido-list/objetoPerdido-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { MaterialImportsModule } from './modules/material-imports.module';
-import { GasolineraItemComponent } from './components/objetoPerdido-item/objetoPerdido-item.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    GasolinerasListComponent,
-    ToolbarComponent,
-    GasolineraItemComponent
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

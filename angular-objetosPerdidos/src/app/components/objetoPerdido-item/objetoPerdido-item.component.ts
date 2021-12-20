@@ -8,12 +8,12 @@ import { ObjetoPerdidoFirebaseService } from 'src/app/services/objetoPerdido-fir
   styleUrls: ['./objetoPerdido-item.component.css']
 })
 export class ObjetoPerdidoItemComponent implements OnInit {
-  @Input() gasolinera!: ListaObjetosPerdidos;
+  @Input() objetoPerdido!: ListaObjetosPerdidos;
 
-  constructor(private gasolineraFirebaseService: ObjetoPerdidoFirebaseService) { }
+  constructor(private objetoPerdidoFirebaseService: ObjetoPerdidoFirebaseService) { }
 
   ngOnInit(): void {
-    console.log(this.gasolinera);
+    console.log(this.objetoPerdido);
   }
 
   

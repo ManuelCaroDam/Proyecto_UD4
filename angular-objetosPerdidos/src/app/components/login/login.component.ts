@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 
 import firebase from 'firebase/compat/app';
 import { Observable } from 'rxjs';
-import { User } from 'src/app/models/interfaces/user.interface';
+
 
 const COLLECTION_USERS = 'users'; 
 @Component({
@@ -14,7 +14,7 @@ const COLLECTION_USERS = 'users';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  userList!: Observable<User[]>;
+ 
 
   constructor(public auth: AngularFireAuth, 
     private firestore: AngularFirestore,
@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getUserList();
+    
   }
 
   login() {
@@ -43,8 +43,6 @@ export class LoginComponent implements OnInit {
     this.auth.signOut();
   }
 
-  getUserList() {
-    this.userList = this.firestore.collection<User>(COLLECTION_USERS).valueChanges();
-  }
+
 
 }
