@@ -1,11 +1,11 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <span>GASapp</span>
+        <span>Objetos Perdidos</span>
         <span class="example-spacer"></span>
-        <button mat-button [matMenuTriggerFor]="menu">{{ getName() }}</button>
+        <button mat-button [matMenuTriggerFor]="menu">{{ getDireccionObjeto() }}</button>
         <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="logout()">Logout</button>
         </mat-menu>
-        <img class="example-icon profile-photo" width="48px" [src]="getPhoto()" />
+        <img class="example-icon profile-photo" width="48px" [src]="getMunicipio()" />
     </mat-toolbar-row>
 </mat-toolbar>

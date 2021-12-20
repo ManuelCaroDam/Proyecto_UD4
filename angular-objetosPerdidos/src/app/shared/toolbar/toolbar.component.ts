@@ -14,12 +14,12 @@ export class ToolbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getName() {
-    return localStorage.getItem('name')? localStorage.getItem('name') : 'Login';
+  getDireccionObjeto() {
+    return localStorage.getItem('direccion')? localStorage.getItem('direccion') : 'Login';
   }
 
-  getPhoto() {
-    return localStorage.getItem('photo');
+  getMunicipio() {
+    return localStorage.getItem('municipio')? localStorage.getItem('municipio') : 'Login';
   }
 
   logout() {
