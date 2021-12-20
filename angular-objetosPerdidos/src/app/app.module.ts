@@ -16,13 +16,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { MaterialImportsModule } from './modules/material-imports.module';
+import { FormObjetoPerdidoComponent } from './components/form-objeto-perdido/form-objeto-perdido.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    FormObjetoPerdidoComponent
   ],
   imports: [
     BrowserModule,
