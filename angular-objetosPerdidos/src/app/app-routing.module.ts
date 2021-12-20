@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
-import { ObjetosPerdidosListComponent } from './components/objetoPerdido-list/objetoPerdido-list.component';
+import { ObjetosPerdidosListComponent } from './components/objetoPerdido-list/objetosPerdidos-list.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: LoginComponent },
