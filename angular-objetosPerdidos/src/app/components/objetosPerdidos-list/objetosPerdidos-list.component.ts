@@ -7,7 +7,7 @@ import { ObjetosPerdidosService } from 'src/app/services/objetoPerdido.service';
   templateUrl: './objetosPerdidos-list.component.html',
   styleUrls: ['./objetosPerdidos-list.component.css']
 })
-export class GasolinerasListComponent implements OnInit {
+export class ObjetoPerdidoListComponent implements OnInit {
 
   listaObjetosList: ListaObjetosPerdidos[] = [];
   
