@@ -5,7 +5,7 @@ import { Observable, forkJoin } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class GasolinerasService {
+export class ObjetosPerdidosService {
 
   constructor(private http: HttpClient) { }
 
