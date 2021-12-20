@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 
 import firebase from 'firebase/compat/app';
 import { Observable } from 'rxjs';
+import { LoginDto } from 'src/app/models/dto/auth.dto';
 import { User } from 'src/app/models/interfaces/user.interface';
 
 const COLLECTION_USERS = 'users'; 
@@ -15,6 +16,7 @@ const COLLECTION_USERS = 'users';
 })
 export class LoginComponent implements OnInit {
   userList!: Observable<User[]>;
+  loginDto = new LoginDto();
 
   constructor(public auth: AngularFireAuth, 
     private firestore: AngularFirestore,
